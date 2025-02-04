@@ -1,6 +1,6 @@
 # devlinks-akio
 
-<h2> ![image](https://github.com/user-attachments/assets/f542469d-b9ba-46a8-ab08-d72afbe7b539) Akio's DevLinks </h2>
+<h2> &#128278; Akio's DevLinks </h2>
 <p> Linktree, 2025. </p>
 
 <p>2025 •<em> HTML, CSS, JavaScript</em> • Finished</p>

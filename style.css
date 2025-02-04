@@ -26,6 +26,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -34,7 +35,8 @@ body * {
 }
 
 #container {
-  width: 500px;
+  width: 100%;
+  max-width: 588px;
   margin: 80px auto 0px;
   padding: 0 40px;
 }
@@ -75,11 +77,19 @@ top: 50%;
 left: 0;
 z-index: 1;
 transform: translateY(-50%);
+animation: slide-back 0.4s;
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+animation: slide-in 0.4s forwards;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--link-hover);
+}
+
+.light #switch button:hover {
+  outline: 8px solid var(--link-hover);
 }
 
 #switch span {
@@ -152,3 +162,20 @@ footer {
 }
 
 
+@keyframes slide-in {
+from {
+  left: 0;
+}
+to {
+left: 50%;
+}
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+  left: 0;
+  }
+  }
